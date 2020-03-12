@@ -1,11 +1,12 @@
 import ADD_ITEM from './actionType'
 let nextTodoId = 0
-
-export const addItem = (name, des) => {
+ 
+const addItem = (text) => {
     return {
         type: ADD_ITEM,
         id: nextTodoId++,
-        name,
-        des
+        text
     }
 }
+
+export default addItem
